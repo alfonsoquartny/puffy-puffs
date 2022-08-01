@@ -28,6 +28,11 @@ public class board : MonoBehaviour
         fillRandom();
     }
 
+    private void Update()
+    {
+      
+    }
+
     void SetupTiles()
     {
         for (int i = 0; i < width; i++)
