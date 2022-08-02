@@ -310,9 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be935021f2f3f24988a4507119e3382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 7
-  height: 9
-  borderSize: 2
+  width: 5
+  height: 7
+  borderSize: 0.5
   tilePrefab: {fileID: 288050269561072373, guid: 952247eb2cb38b849a7dc08db34bed97, type: 3}
   gamePiecePrefabs:
   - {fileID: 7431634343105660833, guid: bafb4c91e061d634abb2580ee3251500, type: 3}
@@ -321,6 +321,7 @@ MonoBehaviour:
   - {fileID: 3539721041100923965, guid: be46ac1476a5b4f46ae21d1b8946065e, type: 3}
   - {fileID: 2166187667502198102, guid: 3b7d35d6628ca024da159200fd3b16cc, type: 3}
   - {fileID: 7953824103441532418, guid: ad694ad901e270d4a8c143198a34a605, type: 3}
+  swapTime: 0.5
 --- !u!4 &1157756525
 Transform:
   m_ObjectHideFlags: 0
