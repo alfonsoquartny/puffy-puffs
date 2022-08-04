@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5385237034729385035}
   - component: {fileID: 5385237034729385034}
-  - component: {fileID: 6557293579401497345}
+  - component: {fileID: -1477185055261427474}
   m_Layer: 0
   m_Name: pinkCandy
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6557293579401497345
+--- !u!114 &-1477185055261427474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5385237034729385033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fe3cd8c7014542af712aa2d4c121a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1068e88a04a15fd4fa5725cc2c48bc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xIndex: 0
   yIndex: 0
   interpolation: 4
+  matchValue: 5

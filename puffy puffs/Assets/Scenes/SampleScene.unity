@@ -307,20 +307,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1157756523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be935021f2f3f24988a4507119e3382, type: 3}
+  m_Script: {fileID: 11500000, guid: 6630e7ae8f69b664fb5c1b4c57c1a187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   width: 5
   height: 7
-  borderSize: 0.5
+  borderSize: 0
   tilePrefab: {fileID: 288050269561072373, guid: 952247eb2cb38b849a7dc08db34bed97, type: 3}
   gamePiecePrefabs:
-  - {fileID: 7431634343105660833, guid: bafb4c91e061d634abb2580ee3251500, type: 3}
   - {fileID: 5999688973057718743, guid: 141298c2d5dcb8949b545ce961d161dd, type: 3}
-  - {fileID: 5385237034729385033, guid: b1dd828d35a5b2c48a8cde3722652cf8, type: 3}
   - {fileID: 3539721041100923965, guid: be46ac1476a5b4f46ae21d1b8946065e, type: 3}
-  - {fileID: 2166187667502198102, guid: 3b7d35d6628ca024da159200fd3b16cc, type: 3}
   - {fileID: 7953824103441532418, guid: ad694ad901e270d4a8c143198a34a605, type: 3}
+  - {fileID: 5385237034729385033, guid: b1dd828d35a5b2c48a8cde3722652cf8, type: 3}
+  - {fileID: 7431634343105660833, guid: bafb4c91e061d634abb2580ee3251500, type: 3}
   swapTime: 0.5
 --- !u!4 &1157756525
 Transform:

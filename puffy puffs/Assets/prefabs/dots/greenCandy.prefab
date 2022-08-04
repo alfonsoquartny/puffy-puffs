@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3539721041100923963}
   - component: {fileID: 3539721041100923962}
-  - component: {fileID: -8589088494616193130}
+  - component: {fileID: -8407447993062314680}
   m_Layer: 0
   m_Name: greenCandy
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3539721041100923965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1.4}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7971119721448038031, guid: 7fd0b64bae4f8e74d8bcd7551881a445, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 542e200467d12a244b94fa8071a17965, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8589088494616193130
+--- !u!114 &-8407447993062314680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3539721041100923965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fe3cd8c7014542af712aa2d4c121a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1068e88a04a15fd4fa5725cc2c48bc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xIndex: 0
   yIndex: 0
   interpolation: 4
+  matchValue: 2

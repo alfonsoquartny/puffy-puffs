@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3465709135572934754}
   - component: {fileID: 4161733507271201884}
-  - component: {fileID: 6805655199202324470}
-  - component: {fileID: 2981568508750770264}
+  - component: {fileID: -4456238230239897589}
   - component: {fileID: 6762124860927863900}
   m_Layer: 0
   m_Name: tileNormal
@@ -85,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6805655199202324470
+--- !u!114 &-4456238230239897589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,26 +93,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 288050269561072373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd211ee82c57db44fbd3dc61f6830628, type: 3}
+  m_Script: {fileID: 11500000, guid: fabb903e27889284a9405ff90c62ec57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xIndex: 0
   yIndex: 0
---- !u!114 &2981568508750770264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288050269561072373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fe3cd8c7014542af712aa2d4c121a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xIndex: 0
-  yIndex: 0
-  interpolation: 4
 --- !u!61 &6762124860927863900
 BoxCollider2D:
   m_ObjectHideFlags: 0

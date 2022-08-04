@@ -1,13 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class gamePiece : MonoBehaviour
-{
+public class GamePiece : MonoBehaviour {
 
 	public int xIndex;
 	public int yIndex;
 
-	board m_board;
+	Board m_board;
 
 	bool m_isMoving = false;
 
@@ -22,15 +21,28 @@ public class gamePiece : MonoBehaviour
 		SmootherStep
 	};
 
+	public MatchValue matchValue;
 
-	// Use this for initialization
-	void Start()
+	public enum MatchValue
 	{
+		SiyahSoda,
+		SariSoda,
+        YesilSoda,
+		BeyazSoda,
+		KirmiziSoda,
+		PembeSoda
 
 	}
 
+
+	// Use this for initialization
+	void Start () 
+	{
+	
+	}
+	
 	// Update is called once per frame
-	void Update()
+	void Update () 
 	{
 		/*
 		if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -48,7 +60,7 @@ public class gamePiece : MonoBehaviour
 
 	}
 
-	public void Init(board board)
+	public void Init(Board board)
 	{
 		m_board = board;
 	}
@@ -59,13 +71,13 @@ public class gamePiece : MonoBehaviour
 		yIndex = y;
 	}
 
-	public void Move(int destX, int destY, float timeToMove)
+	public void Move (int destX, int destY, float timeToMove)
 	{
 
 		if (!m_isMoving)
 		{
 
-			StartCoroutine(MoveRoutine(new Vector3(destX, destY, 0), timeToMove));
+			StartCoroutine(MoveRoutine(new Vector3(destX, destY,0), timeToMove));	
 		}
 	}
 
@@ -86,12 +98,11 @@ public class gamePiece : MonoBehaviour
 			if (Vector3.Distance(transform.position, destination) < 0.01f)
 			{
 
-
 				reachedDestination = true;
 
-				if (m_board != null)
+				if (m_board !=null)
 				{
-					m_board.PlaceGamePiece(this, (int)destination.x, (int)destination.y);
+					m_board.PlaceGamePiece(this, (int) destination.x, (int) destination.y);
 
 				}
 
@@ -115,10 +126,10 @@ public class gamePiece : MonoBehaviour
 					t = 1 - Mathf.Cos(t * Mathf.PI * 0.5f);
 					break;
 				case InterpType.SmoothStep:
-					t = t * t * (3 - 2 * t);
+					t = t*t*(3 - 2*t);
 					break;
 				case InterpType.SmootherStep:
-					t = t * t * t * (t * (t * 6 - 15) + 10);
+					t =  t*t*t*(t*(t*6 - 15) + 10);
 					break;
 			}
 

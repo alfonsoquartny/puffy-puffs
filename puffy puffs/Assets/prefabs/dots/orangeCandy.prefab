@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7953824103441532476}
   - component: {fileID: 7953824103441532477}
-  - component: {fileID: -785920360200313984}
+  - component: {fileID: 2712900291037705058}
   m_Layer: 0
   m_Name: orangeCandy
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7953824103441532418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1.4}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 4095935546500456289, guid: 7fd0b64bae4f8e74d8bcd7551881a445, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a35fb49ce84c9f7429ac812e6bcf9de9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-785920360200313984
+--- !u!114 &2712900291037705058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7953824103441532418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342fe3cd8c7014542af712aa2d4c121a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1068e88a04a15fd4fa5725cc2c48bc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xIndex: 0
   yIndex: 0
   interpolation: 4
+  matchValue: 1
