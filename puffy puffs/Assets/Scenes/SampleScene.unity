@@ -320,6 +320,7 @@ MonoBehaviour:
   - {fileID: 7953824103441532418, guid: ad694ad901e270d4a8c143198a34a605, type: 3}
   - {fileID: 5385237034729385033, guid: b1dd828d35a5b2c48a8cde3722652cf8, type: 3}
   - {fileID: 7431634343105660833, guid: bafb4c91e061d634abb2580ee3251500, type: 3}
+  - {fileID: 2166187667502198102, guid: 3b7d35d6628ca024da159200fd3b16cc, type: 3}
   swapTime: 0.5
 --- !u!4 &1157756525
 Transform:
@@ -634,7 +635,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d0a86c6f65cbd534da7d56f464e77afd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2c13b2d85eafd0340804a9719f7de7ab, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.448
   m_Pitch: 1

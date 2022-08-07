@@ -30,7 +30,8 @@ public class GamePiece : MonoBehaviour {
         YesilSoda,
 		BeyazSoda,
 		KirmiziSoda,
-		PembeSoda
+		MaviSoda,
+		MorSoda
 
 	}
 
