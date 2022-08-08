@@ -45,19 +45,7 @@ public class GamePiece : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		/*
-		if (Input.GetKeyDown(KeyCode.RightArrow))
-		{
-			Move((int)transform.position.x + 2, (int) transform.position.y, 0.5f);
-
-		}
-
-		if (Input.GetKeyDown(KeyCode.LeftArrow))
-		{
-			Move((int)transform.position.x - 2, (int) transform.position.y, 0.5f);
-
-		}
-		*/
+	
 
 	}
 

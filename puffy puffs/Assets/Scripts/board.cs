@@ -74,7 +74,7 @@ public class Board : MonoBehaviour
 
         if (gamePiecePrefabs[randomIdx] == null)
         {
-            Debug.LogWarning("BOARD:  " + randomIdx + "does not contain a valid GamePiece prefab!");
+            Debug.LogWarning("BOARD:  " + randomIdx + "prefab icermiyor");
         }
 
         return gamePiecePrefabs[randomIdx];
@@ -84,7 +84,7 @@ public class Board : MonoBehaviour
     {
         if (gamePiece == null)
         {
-            Debug.LogWarning("BOARD:  Invalid GamePiece!");
+            Debug.LogWarning("Board.Bos!");
             return;
         }
 
@@ -148,7 +148,7 @@ public class Board : MonoBehaviour
 
                         if (iterations >= maxInterations)
                         {
-//                            Debug.Log("BOARD FillBoard: max iterations reached! =====================");
+                            //max sayi ulasirsa
                             break;
                         }
                     }
