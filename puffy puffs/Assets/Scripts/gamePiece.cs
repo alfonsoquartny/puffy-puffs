@@ -1,6 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum MatchValue
+{
+    SiyahSoda,
+	SariSoda,
+	YesilSoda,
+	MaviSodaS,
+    PembeSoda,
+	KirmiziSoda,
+	None
+}
+
+
 public class GamePiece : MonoBehaviour {
 
 	public int xIndex;
@@ -23,17 +35,9 @@ public class GamePiece : MonoBehaviour {
 
 	public MatchValue matchValue;
 
-	public enum MatchValue
-	{
-		SiyahSoda,
-		SariSoda,
-        YesilSoda,
-		BeyazSoda,
-		KirmiziSoda,
-		MaviSoda,
-		MorSoda
+	public int scoreValue = 20;
 
-	}
+    public AudioClip clearSound;
 
 
 	// Use this for initialization
@@ -45,7 +49,19 @@ public class GamePiece : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-	
+		/*
+		if (Input.GetKeyDown(KeyCode.RightArrow))
+		{
+			Move((int)transform.position.x + 2, (int) transform.position.y, 0.5f);
+
+		}
+
+		if (Input.GetKeyDown(KeyCode.LeftArrow))
+		{
+			Move((int)transform.position.x - 2, (int) transform.position.y, 0.5f);
+
+		}
+		*/
 
 	}
 
@@ -132,6 +148,37 @@ public class GamePiece : MonoBehaviour {
 		m_isMoving = false;
 
 
+	}
+
+	public void ChangeColor(GamePiece pieceToMatch)
+	{
+		SpriteRenderer rendererToChange = GetComponent<SpriteRenderer>();
+
+		if (pieceToMatch !=null)
+		{
+			SpriteRenderer rendererToMatch = pieceToMatch.GetComponent<SpriteRenderer>();
+
+			if (rendererToMatch !=null && rendererToChange !=null)
+			{
+				rendererToChange.color = rendererToMatch.color;
+			}
+
+			matchValue = pieceToMatch.matchValue;
+		}
+
+	}
+
+	public void ScorePoints(int multiplier = 1, int bonus = 0)
+	{
+		if (ScoreManager.Instance != null)
+		{
+			ScoreManager.Instance.AddScore (scoreValue * multiplier + bonus);
+		}
+
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlayClipAtPoint(clearSound, Vector3.zero, SoundManager.Instance.fxVolume);
+        }
 	}
 
 }
