@@ -8,7 +8,7 @@ public class Board : MonoBehaviour
     public int width;
     public int height;
 
-    public int borderSize;
+    public float borderSize;
 
     public GameObject tileNormalPrefab;
     public GameObject tileObstaclePrefab;

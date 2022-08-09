@@ -24,7 +24,9 @@ public class GameManager : Singleton<GameManager> {
     public Sprite winIcon;
     public Sprite goalIcon;
 
-
+	public Image ScoreInner;
+	public float waitTime = 3f;
+	public ScoreManager scoremanager;
 	void Start () 
 	{
 		m_board = GameObject.FindObjectOfType<Board>().GetComponent<Board>();
@@ -39,8 +41,15 @@ public class GameManager : Singleton<GameManager> {
 		UpdateMoves ();
 		StartCoroutine ("ExecuteGameLoop");
 	}
+    private void Update()
+    {
+		if (scoremanager.CurrentScore == scoreGoal)
+        {
+			ScoreInner.fillAmount += 1.0f / waitTime * Time.deltaTime;
+        }
+	}
 
-	public void UpdateMoves()
+    public void UpdateMoves()
 	{
 		if (movesLeftText != null) 
 		{

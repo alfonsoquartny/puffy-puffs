@@ -8,11 +8,17 @@ public class rowbomb : MonoBehaviour
     SpriteRenderer sr;
     public Sprite[] sprites;
     public int spriteDeger;
+    private void Start()
+    {
+        sr = gameObject.GetComponent<SpriteRenderer>();
+        bomb = gameObject.GetComponent<Bomb>();
+
+
+
+    }
     private void Update()
     {
-        bomb = GetComponent<Bomb>();
         sr.sprite = sprites[spriteDeger];
-
         if (bomb.matchValue == MatchValue.SiseMorSoda)
         {
             spriteDeger = 0;
