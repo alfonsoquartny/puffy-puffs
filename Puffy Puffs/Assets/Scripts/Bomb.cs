@@ -16,3 +16,4 @@ public class Bomb : GamePiece
 	public BombType bombType;
 
 }
+

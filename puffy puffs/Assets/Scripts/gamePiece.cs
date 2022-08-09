@@ -9,6 +9,8 @@ public enum MatchValue
 	MaviSodaS,
     PembeSoda,
 	KirmiziSoda,
+	kartonSoda,
+	SiseMorSoda,
 	None
 }
 
